@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+.btn {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Green */
+.success {
+  border-color: #4CAF50;
+  color: green;
+}
+
+.success:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+ 
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+
+<meta charset="ISO-8859-1">
+<title>Project</title>
+</head>
+<body>
+<h3>what's your Project</h3>
+
+<div class="container">
+  <form action="projectTask" method="post">
+    <label for="title">Task/Project Title </label>
+    
+    <input type="text" name="title" placeholder="Your title..">
+
+   
+
+   
+    <label for="subject">Description of your Project in detail</label>
+    <textarea  name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    
+     <label for="category">Job Category</label>
+    <select  name="category">
+      <option value="australia">php</option>
+      <option value="canada">java</option>
+      <option value="usa">sql</option>
+      <option value="usa">C/C++</option>
+      <option value="usa">Asap</option>
+    <option value="usa">C#</option>
+    <option value="usa">python</option>
+    </select>
+    
+    
+
+  select a date: <input type="date" name="date">
+
+
+   <br>
+   <br>
+     <label for="location">Location</label>
+    <input type="text"  name="location" placeholder="Your location.">
+     <label for="Budget">Budget</label>
+    <input type="text"  name="Budget" placeholder="Your budget..">
+
+<br>
+  </form>
+    <a href="http://localhost:8092/myproject/Alltask.html"> <button style="margin:20px;" class="btn success">Submit</button>
+</div>
+
+
+</body>
+</html>

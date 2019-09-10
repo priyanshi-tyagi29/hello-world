@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  margin-left: 2px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000000;
+}
+
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+}
+
+
+.footer {
+  padding: 20px;
+color: white;
+  text-align: right;
+  background: #000000;
+}
+
+
+.hero-image {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6pbJft9rIQN5yVdm3luJC3N347Xdds_7MvFa47kz1S5Kj41Ze");
+  height: 450px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+</style>
+
+<meta charset="ISO-8859-1">
+<title>EDIT PROFILE</title>
+</head>
+<body>
+<div class="hero-image">
+<div class="hero text">
+<nav id="nav-menu-container">
+<ul class="nav-menu sf-js-enabled sf-arrows" style="style row";>
+
+
+<li><a href="http://localhost:8092/myproject/LoginIndex.html">Login</a></li>
+<li><a href="http://localhost:8092/myproject/index.html">Sign up</a></li>
+<!-- <li><a href="http://localhost:8092/myproject/advance search.html">Advance Search</a></li> -->
+<li><a href="http://localhost:8092/myproject/contact.html">Contact</a></li>
+<li><a href="http://localhost:8092/myproject/MainHome.html">Home</a></li>
+<left><li><a href="http://localhost:8092/myproject/myprofile.html">My Profile</a></li></left>
+
+
+<ul style="display: none;">
+
+</ul>
+</li>
+</ul>
+</nav>
+<br>
+<br>
+<br>
+<br>
+
+<center><h1>MY PROFILE</h1></center>
+<br>
+<br>
+
+
+</div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<form action="profileEdit" style="border:1px solid #ccc">
+  <div class="container">
+   <center><h1>EDIT MY PROFILE</h1></center> 
+    <hr>
+    <br>
+    <br>
+    <br>
+    Upload photo:<input type="file" name="pic" accept="image/*" required><br>
+<br>
+<br>
+<br>
+<br>
+
+    <label for="Email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="Email" required>
+
+    <label for="Name "><b>NAME</b></label>
+    <input type="text" placeholder="Enter your new name" name="Name" required>
+
+    <label for="Address"><b>ADDRESS</b></label>
+    <input type="text" placeholder="enter your new address" name="Address" required>
+
+
+<label for="Phone"><b>PHONE_NO.</b></label>
+    <input type="text" placeholder="enter your phone-no" name="Phone" required>
+
+<br>
+<br>
+<br>
+ Upload CV:<input type="file" name="pic" accept="image/*" required><br>
+ <br>
+<br>
+<br>
+
+
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    </label>
+
+    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+    <div class="clearfix">
+    <center> <button type="submit" class="Edit-btn"> EDIT PROFILE </button></center>
+    <br>
+    <p><center> Go back to MY PROFILE:-></center></p>
+<center> <a href="myprofile.html"><button type="button" class="btn btn-primary" style="size:btn-lg;"> My Profile </button></a></center>
+    
+      
+    </div>
+  </div>
+</form>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="footer">
+  <h2>Created By -</h2>
+<h3>Contact us - 999999999</h3>
+</div>
+
+
+</body>
+</html>
